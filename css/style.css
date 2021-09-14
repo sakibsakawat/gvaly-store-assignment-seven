@@ -1,12 +1,27 @@
 body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
+   
 }
+header{
+  position:sticky;
+}
+.heading{
+  font-family:monospace;
+  text-align: center;
+   position:sticky;
+}
+.gvaly{
+  font-weight: bold;
+  color: rgb(30, 62, 168);
+}
+
 .search-field {
   border: none;
-  border-radius: 50px;
+ 
   padding: 5px;
   outline: none;
+  background-color: rgb(203, 215, 255);
 }
 .search-field:hover {
   outline: none;
@@ -14,51 +29,62 @@ body {
 }
 .search-box {
   border: 1px solid rgb(3, 118, 211);
-  width: 281px;
+  width: 501px;
   border-radius: 5px;
   margin: auto;
   margin-top: 50px;
+  margin-bottom: 100px;
   border-right: none;
 }
 .search-button {
   padding: 10px 50px;
   border-radius: 25px;
-  margin-left: 20px;
+  margin-left: 245px;
+  
 }
 #all-products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* border: 1px solid black; */
   text-align: center;
   width: 100%;
   margin: auto;
   align-items: center;
   justify-content: center;
+  background-color: rgb(203, 215, 255);
 }
 .single-product {
   padding: 10px;
   transition: 0.6s;
+  height: 550px;
+  
 }
 .single-product:hover {
   box-shadow: 4px 4px 7px gray;
   border-radius: 10px;
-  border: 1px solid cyan;
+  background-color: rgb(235, 236, 250);
 }
 .product-image {
   width: 150px;
   height: 150px;
 }
+.row{
+  background-color: rgb(203, 215, 255);
+}
 .cart {
   width: 350px;
-  /* border: 1px solid green; */
   padding: 10px;
   box-shadow: 10px 10px 20px gray;
   border-radius: 5px;
   margin-right: 30px;
   position: fixed;
+  background-color: rgb(255, 255, 255);
+  
 }
+
+
 .cart-main {
   padding-right: 30px;
+  
 }
 @media only screen and (max-width: 768px) {
   #all-products {
@@ -67,12 +93,14 @@ body {
   }
   .cart {
     width: 300px;
-    /* border: 1px solid green; */
+  
     padding: 10px;
+    
     box-shadow: 10px 10px 20px gray;
     border-radius: 5px;
     margin-right: 30px;
-    position: fixed;
+    position: relative;
+    
   }
   .cart-main {
     padding-right: 10px;
